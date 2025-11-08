@@ -3,7 +3,7 @@
 
 /* -> First of all let's start with a basic Promise Chain, and then tackle its alternative using aync/await */
 
-/* 1) Here we define a function that will use some sort of async calls, imagine it like we are coding OUR OWN fetch(), so it will return a promise! */
+/* 1) Here we define a function that will use some sort of "async calls", imagine it like we are coding OUR OWN fetch(), so it will return a promise! */
 function filterUser(user) {
     const p = new Promise((resolve, reject) => {
         console.log("Filtering User:", user);
