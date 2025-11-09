@@ -5,7 +5,7 @@
 > **Author:** [Haitam Bidiouane](https://linkedin.com/in/haitam-bidiouane/) ([@sch0penheimer](https://github.com/sch0penheimer))
 ---
 
-# The Asynchronous JavaScript Runtime: Event Loop, Callbacks, Tasks and Promises Explained
+# The Asynchronous JavaScript Runtime: Event Loop, Callbacks, Tasks and Promises
 
 This repository is a compact, hands-on collection of JavaScript examples and notes that demonstrate how the event loop, callbacks, tasks, microtasks, promises, and async/await behave in practice. Each file is a focused snippet with explanatory comments so you can run and experiment with the examples (Using Node.js or even running them directly on a browser). Work through the files in order to build an intuition of asynchronous control flow and use them as a playground for learning, or follow-along this README !
 
