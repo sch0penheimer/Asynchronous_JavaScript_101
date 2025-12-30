@@ -1,11 +1,17 @@
 
 ---
-> **Last Updated:** November 8th, 2025
+> **Last Updated:** December 30th, 2025
 >
 > **Author:** [Haitam Bidiouane](https://linkedin.com/in/haitam-bidiouane/) ([@sch0penheimer](https://github.com/sch0penheimer))
 ---
 
 # The Mono-Threaded yet Asynchronous JavaScript Runtime: Event Loop, Callbacks, Tasks and Promises
+
+JavaScript is this very interesting piece of duct tape holding the whole internet together, but what makes it super interesting, is that it's a `single-threaded` language, it guarantees only one thread of execution for running JavaScript code, that means we only have **one active** <ins>**execution context**</ins> at a time: One call stack, one heap, no parallel execution of JS functions, no data concurrency races inside normal JS code.
+
+And yet, despite all of that, JavaScript still manages to handle asynchronous work efficiently. It does this by pushing long-running or blocking operations like network requests, timers, or file I/O out of the JavaScript thread and into the runtime environment. Once those operations complete, their "callbacks" are placed into *task queues*, and *the event loop* schedules them to run one at a time on the single JavaScript thread.
+
+So instead of parallel execution, JavaScript relies on concurrency through the **event loop**: work happens elsewhere, but the results are processed sequentially. This lets JavaScript stay responsive without ever breaking its single-threaded execution guarantee.
 
 This repository is a compact, hands-on collection of JavaScript examples and notes that demonstrate how the event loop, callbacks, tasks, microtasks, promises, and async/await behave in practice. Each file is a focused snippet with explanatory comments so you can run and experiment with the examples (Using Node.js or even running them directly on a browser). Work through the files in order to build an intuition of asynchronous control flow and use them as a playground for learning, or follow-along this README !
 
